@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyTrack - Assignment Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>StudyTrack</h1>
+            <p>Keep track of your university assignments.</p>
+        </header>
+
+        <section class="card">
+            <h2>Add an Assignment</h2>
+
+            <form id="assignmentForm">
+                <label for="title">Assignment Title</label>
+                <input type="text" id="title" required>
+
+                <label for="course">Course</label>
+                <input type="text" id="course" required>
+
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="3"></textarea>
+
+                <button type="submit">Add Assignment</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>My Assignments</h2>
+            <p id="message">Loading assignments...</p>
+            <div id="assignmentList"></div>
+        </section>
+    </main>
+</body>
+</html>
